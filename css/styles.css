@@ -402,110 +402,33 @@ tr:last-child td { border-bottom: 0; }
   .caption-card span { font-size: .75rem; margin-top: 2px; display: block; }
 
   /* Showcase Mobile Styles */
-  .hero.showcase-hero { padding: 32px 0 42px; }
-  .showcase-header { margin-bottom: 20px; }
-  .showcase-title { font-size: clamp(1.9rem, 7.5vw, 2.5rem); margin-bottom: 16px; }
-  .showcase-sub { font-size: 0.95rem; margin-bottom: 18px; }
+  .hero.showcase-hero { padding: 28px 0 40px; display: block; }
+  .showcase-header { margin-bottom: 26px; }
+  .showcase-header .eyebrow { font-size: .68rem; line-height: 1.5; }
+  .showcase-title { font-size: clamp(2.1rem, 10vw, 2.8rem); margin: 0 0 20px; }
   .showcase-actions { flex-direction: column; width: 100%; gap: 10px; }
-  .showcase-actions .button { width: 100%; text-align: center; }
-  .showcase-stage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: auto;
-    padding: 6px 0 16px;
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .showcase-art {
-    width: min(320px, 86%);
-    margin: 0 auto;
-    position: relative;
-    z-index: 2;
-  }
-  .showcase-art img {
-    height: 340px;
-    border-width: 5px;
-  }
-  .showcase-ring {
-    position: absolute;
-    top: auto;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(350px, 92%);
-    height: 100px;
-    z-index: 1;
-  }
-  .stage-nav-btn { width: 38px; height: 38px; font-size: 1rem; }
-  .stage-nav-btn.prev { left: -6px; }
-  .stage-nav-btn.next { right: -6px; }
-  .showcase-stage-meta {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: min(320px, 86%);
-    margin: 18px auto 0;
-    padding: 0 4px;
-    gap: 10px;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-  .showcase-models {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    text-align: left;
-    flex-shrink: 0;
-  }
-  .showcase-models .model-name {
-    font-size: 0.78rem;
-    letter-spacing: 0.04em;
-  }
-  .model-item {
-    padding: 2px 0;
-    gap: 8px;
-  }
-  .model-bar {
-    width: 2.5px;
-    height: 14px;
-  }
-  .showcase-badge {
-    display: inline-flex;
-    align-items: center;
-    padding: 6px 12px;
-    gap: 10px;
-    border-radius: 14px;
-    flex-shrink: 0;
-  }
-  .badge-thumbs img {
-    width: 28px;
-    height: 28px;
-    border-radius: 8px;
-  }
-  .badge-count {
-    white-space: nowrap;
-    line-height: 1.15;
-  }
-  .badge-count span {
-    font-size: 0.68rem;
-    letter-spacing: 0.04em;
-  }
-  .badge-count small {
-    font-size: 0.68rem;
-  }
-  .showcase-note {
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    width: 100%;
-    padding: 10px 14px;
-    margin-top: 16px;
-  }
+  .showcase-actions .button { width: 100%; padding: 14px 18px; }
+  .showcase-stage-wrap { display: block; }
+  .showcase-stage { display: block; min-height: 0; max-width: none; padding: 0; }
+  .showcase-ring { display: none; }
+  .showcase-art { width: min(340px, 100%); margin: 0 auto; padding: 10px; border-radius: 170px 170px 26px 26px; }
+  .showcase-art img { height: auto; aspect-ratio: 4 / 5; object-position: 50% 62%; border-width: 5px; border-radius: 160px 160px 18px 18px; }
+  .showcase-art .sticker { right: -8px; top: 26px; }
+  .showcase-art .caption-card { position: static; margin: 10px 2px 2px; padding: 12px 14px; text-align: left; border-radius: 16px; background: var(--paper); box-shadow: none; backdrop-filter: none; -webkit-backdrop-filter: none; }
+  .showcase-art .caption-card strong { font-size: 1rem; line-height: 1.25; }
+  .showcase-art .caption-card span { font-size: .8rem; margin-top: 3px; }
+  .stage-nav-btn { display: none; }
+  .showcase-stage-meta { position: static; display: flex; flex-direction: column; align-items: stretch; gap: 12px; width: min(340px, 100%); margin: 18px auto 0; padding: 0; pointer-events: auto; }
+  .showcase-models { flex-direction: row; gap: 8px; }
+  .model-item { flex: 1 1 0; justify-content: center; padding: 10px 8px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); font-size: .72rem; letter-spacing: .02em; text-transform: none; font-weight: 700; text-align: center; }
+  .model-bar { display: none; }
+  .model-item.active { border-color: var(--cherry); color: var(--cherry); }
+  .showcase-badge { display: flex; width: 100%; padding: 10px 14px; gap: 12px; border-radius: 16px; }
+  .badge-thumbs img { width: 38px; height: 38px; border-radius: 10px; }
+  .badge-thumbs img:last-child { margin-left: -12px; }
+  .badge-count span { font-size: .72rem; }
+  .badge-count small { font-size: .78rem; }
+  .showcase-note { flex-direction: column; align-items: center; gap: 6px; width: 100%; padding: 10px 14px; margin-top: 16px; }
 
   .section { padding: 46px 0; }
   .section-head { display: block; margin-bottom: 22px; }
