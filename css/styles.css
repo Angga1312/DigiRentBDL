@@ -84,7 +84,7 @@ p { margin: 0 0 14px; }
 .showcase-title {
   font-size: clamp(2.4rem, 5.5vw, 4.2rem);
   letter-spacing: -.035em;
-  margin: 0 0 16px;
+  margin: 0 0 22px;
   line-height: 1.1;
   text-transform: uppercase;
   font-family: "Playfair Display", Georgia, serif;
@@ -403,7 +403,7 @@ tr:last-child td { border-bottom: 0; }
   /* Showcase Mobile Styles */
   .hero.showcase-hero { padding: 32px 0 42px; }
   .showcase-header { margin-bottom: 20px; }
-  .showcase-title { font-size: clamp(1.9rem, 7.5vw, 2.5rem); margin-bottom: 12px; }
+  .showcase-title { font-size: clamp(1.9rem, 7.5vw, 2.5rem); margin-bottom: 16px; }
   .showcase-sub { font-size: 0.95rem; margin-bottom: 18px; }
   .showcase-actions { flex-direction: column; width: 100%; gap: 10px; }
   .showcase-actions .button { width: 100%; text-align: center; }
