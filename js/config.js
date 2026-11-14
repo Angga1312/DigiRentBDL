@@ -13,7 +13,7 @@
         priceNotes: {}
       },
       "Fujifilm X-A3": {
-        prices: { 12: 100000, 24: 135000, 48: 250000 },
+        prices: { 12: 100000, 24: 140000, 48: 250000 },
         priceNotes: { 24: "estimasi proporsional", 48: "estimasi proporsional" }
       }
     },
