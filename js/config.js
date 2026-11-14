@@ -6,7 +6,7 @@
     instagramUrl: "https://www.instagram.com/digirent.bdl/",
     projectReference: "20262-DIGMAREG-KLKx",
     // Replace with the real GA4 Measurement ID from Admin > Data streams.
-    gaMeasurementId: "G-XXXXXXXXXX",
+    gaMeasurementId: "G-26245ECTXK",
     cameras: {
       "Canon EOS M100": {
         prices: { 12: 115000, 24: 150000, 48: 280000 },
